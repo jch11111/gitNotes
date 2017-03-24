@@ -1,0 +1,41 @@
+In github.com, create new repository and DON'T select the option to initialize 
+the repository with a README.
+
+Then open gitbach and navigation to the directory as follows
+cd /c/
+cd folderNameUnderCRoot
+
+git init
+git add -A
+git commit -m "first commit"
+git remote add origin https://github.com/jch11111/calc.git
+git push -u origin master
+
+
+--create a branch
+git branch newBranchName
+
+--delete a branch
+git branch -d branchToDelete  //you can't be on the branch when deleting
+
+--switch to branch
+git checkout branchName
+
+--merge - for example, merging branch b1 to master
+git checkout master
+git branch   //will show branches off master
+git merge b1  //will merge b1 to master
+
+merge conflicts
+https://www.bing.com/videos/search?q=how+to+merge+a+branch+in+github&&view=detail&mid=CEBA3D64125D0FD10C79CEBA3D64125D0FD10C79&FORM=VRDGAR
+
+find out what files have changed
+git status
+
+to undo changes to a changed, unstaged file
+git checkout filename (then run git status to verify it is no longer showing up as modified)
+
+view differences 
+git difftool
+this will allow you to open vimdiff
+to close vimdiff, enter :q (twice)

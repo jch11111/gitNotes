@@ -39,3 +39,10 @@ view differences
 git difftool
 this will allow you to open vimdiff
 to close vimdiff, enter :q (twice)
+
+go back to a previous commit
+git checkout commitNumber...
+e.g. 
+git checkout 27b097c58f1d4642362d7b899a7393e5630ac536
+then, to get back to the current commit...
+git checkout master
